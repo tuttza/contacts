@@ -184,7 +184,7 @@ fn main() {
             match cmd.as_str() {
                 "add"   => { Contact::create_prompt()  }
                 "list"  => { Contact::load_all()       }
-                "size"  => { Contact::display_count()  }
+                "count"  => { Contact::display_count()  }
                 _ => { 
                     println!("Command not recognized.");
                     cli_help();
